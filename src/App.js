@@ -1,9 +1,10 @@
 import React from 'react'
+import HomePage from './pages/home'
 
 const App = () => {
   return (
     <div>
-      This is react Zomato App.
+      <HomePage/>
     </div>
   )
 }
