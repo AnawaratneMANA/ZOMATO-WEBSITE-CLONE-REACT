@@ -2,19 +2,21 @@ import React , { useState } from 'react'
 import Footer from '../../components/common/footer';
 import Header from "../../components/common/header";
 import TabOptions from '../../components/common/tabOptions';
-
+import Delivery from "../../components/delivery"
+import DiningOut from "../../components/diningOut"
+import NightLife from "../../components/nightLife"
 
 
 const getCorrectScreen = (tab) => {
     switch(tab){
         case "Delivery":
-            return <div>Delivery</div>;
+            return <Delivery/>;
         case "Dining Out":
-            return <div>Dining Out</div>;
+            return <DiningOut/>;
         case "NightLife":
-            return <div>Night Life</div>;
+            return <NightLife/>;
         default: 
-            return <div>Delivery</div>;
+            return <Delivery/>;
     }
 }
 
