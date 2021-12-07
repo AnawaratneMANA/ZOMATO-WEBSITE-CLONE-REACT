@@ -13,6 +13,7 @@ const Header = () => {
                         </div>
                         <i className="fi fi-rs-caret-down absolute-center"></i>
                     </div>
+                    <div className="location-search-seperator"></div>
                  </div>
              </div>
         </div>
