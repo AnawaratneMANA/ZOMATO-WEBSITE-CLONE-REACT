@@ -14,7 +14,16 @@ const Header = () => {
                         <i className="fi fi-rs-caret-down absolute-center"></i>
                     </div>
                     <div className="location-search-seperator"></div>
+                    <div className="header-searchbar">
+                        <i className="fi-rs-search absolute-center search-icon"></i>
+                        <input placeholder="Search for restaurant, cuisine or dish" className="search-input"/>
+                    </div>
                  </div>
+                <div className="profile-wrapper">
+                    <img src="https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg" alt="Profile" className="header-profile-image"/>
+                    <span className="header-user-name">Nirmith</span>
+                    <i className="fi fi-rs-angle-small-down absolute-center profile-options-icon"></i>
+                </div>
              </div>
         </div>
         
