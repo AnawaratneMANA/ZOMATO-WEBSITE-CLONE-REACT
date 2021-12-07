@@ -20,8 +20,9 @@ const Header = () => {
                     </div>
                  </div>
                 <div className="profile-wrapper">
-                    <img src="https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg" alt="Profile" className="header-profile-image"/>
-                    <span className="header-user-name">Nirmith</span>
+                    <img src="https://b.zmtcdn.com/images/user_avatars/mug_2x.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A"
+                         className="header-profile-image" alt="Profile" className="header-profile-image"/>
+                    <span className="header-username">Nirmith</span>
                     <i className="fi fi-rs-angle-small-down absolute-center profile-options-icon"></i>
                 </div>
              </div>
