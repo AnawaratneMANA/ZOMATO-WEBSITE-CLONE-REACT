@@ -1,5 +1,6 @@
 import React from 'react'
-
+import "./tabOptions.css"
+// Object Array.
 const tabs = [
     {
         id: 1,
@@ -28,14 +29,23 @@ const tabs = [
     },
 ]
 
-
 const TabOptions = ({activeTab, setActiveTab}) => {
     return (
-        <>
-            This is tabOptions.
-            {/* <button onClick= {() => setActiveTab("NightLife")}> Button </button> */}
-        </>
+        <div className="tab-options">
+            <div className="max-width options-wrapper">
+                {tabs.map((tab) => {
+                    return(
+                        <div onClick={() => setActiveTab(tab.name)}
+                        className={`tab-item absolute-center cur-po ${activeTab === tab.name && 'active-tab'}`}
+                        >
+                            <div className="tab-image-container absolute-center">
 
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
     );
 }
 
