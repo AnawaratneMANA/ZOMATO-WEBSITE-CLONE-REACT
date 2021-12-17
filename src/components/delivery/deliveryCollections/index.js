@@ -1,5 +1,9 @@
 import React from "react"
 import "./deliveryCollections.scss"
+import Slider from "react-slick";
+import NextArrow from "../../common/carousel/nextArrow";
+import PrevArrow from "../../common/carousel/prevArrow";
+import DeliveryItem from "./deliveryItem";
 
 const deliveryItem = [
     {
@@ -70,11 +74,24 @@ const deliveryItem = [
     },
 ]
 
+const settings = {
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow/>,
+    prevArrow: <PrevArrow/>
+};
+
 const DeliveryCollections = () => {
     return (
         <div className="delivery-collection">
             <div className="max-width">
                 <div className="collection-title"> Eats What Makes you Happy!</div>
+                <Slider {...settings}>
+                    {deliveryItem.map((item) => {
+                        return <div><DeliveryItem item={item}/></div>
+                    })}
+                </Slider>
             </div>
         </div>
 
