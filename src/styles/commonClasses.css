@@ -18,4 +18,9 @@
     font-weight: 600;
 }
 
+.slick-next:before,
+.slick-prev:before{
+    color: var(--gray)
+}
+
 
