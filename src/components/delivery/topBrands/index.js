@@ -1,5 +1,8 @@
 import React from "react"
 import "./topBrand.scss"
+import Slider from "react-slick";
+import NextArrow from "../../common/carousel/nextArrow";
+import PrevArrow from "../../common/carousel/prevArrow";
 
 const topBrandList = [
     {
@@ -57,10 +60,28 @@ const topBrandList = [
             "https://b.zmtcdn.com/data/brand_creatives/logos/9fd44dce68f59d5a4f63e7c426c4c282_1605106153.png?output-format=webp",
     },
 ]
+
+const settings = {
+    infinite: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow/>,
+    prevArrow: <PrevArrow/>
+}
+
 const TopBrands = () => {
     return (
-        <div>
-            Top Brands.
+        <div className="top-brand max-width">
+            <div  className="collection-title"> Top Brands For You</div>
+            <Slider {...settings}>
+                {topBrandList.map((brand) => {
+                    return <div>
+                        <div className='top-brand-cover'>
+                            <img src={brand.cover} className="top-brands-image" alt={brand.time}/>
+                        </div>
+                    </div>
+                })}
+            </Slider>
         </div>
     );
 }
