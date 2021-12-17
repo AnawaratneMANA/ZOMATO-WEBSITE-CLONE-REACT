@@ -35,9 +35,9 @@ const Delivery = () => {
         <div>
             <div className="max-width">
                 <Filters filterList={deliveryFilters}/>
-                <DeliveryCollections/>
-                <TopBrands/>
             </div>
+            <DeliveryCollections/>
+            <TopBrands/>
         </div>
 
     );

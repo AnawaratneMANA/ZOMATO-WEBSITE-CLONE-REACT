@@ -76,7 +76,7 @@ const TopBrands = () => {
             <Slider {...settings}>
                 {topBrandList.map((brand) => {
                     return <div>
-                        <div className='top-brand-cover'>
+                        <div className='top-brands-cover'>
                             <img src={brand.cover} className="top-brands-image" alt={brand.time}/>
                         </div>
                     </div>
