@@ -1,7 +1,18 @@
 import React from 'react'
 import "./delivery.scss";
+import Filters from "../common/filters";
+
+
+
 const Delivery = () => {
-    return <div>This is the Delivery</div>;
+    return (
+        <div>
+            <div className="max-width">
+                <Filters/>
+            </div>
+        </div>
+
+    );
 }
 
 export default Delivery;
