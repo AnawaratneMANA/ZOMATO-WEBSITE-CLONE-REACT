@@ -32,7 +32,7 @@ const Delivery = () => {
     return (
         <div>
             <div className="max-width">
-                <Filters fitlerList={deliveryFilters}/>
+                <Filters filterList={deliveryFilters}/>
             </div>
         </div>
 
