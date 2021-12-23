@@ -41,11 +41,21 @@ const ExploreCard  = ({restaurant}) => {
                                 </span>
                             );
                         })}
-
                     </div>
                 )}
+                {approxPrice && <div className="res-price">{approxPrice}</div>}
             </div>
-
+            {bottomContainers.length > 0 &&(
+                <div>
+                    <div className="card-separator"/>
+                    <div className="explore-bottom">
+                        <img src={bottomContainers[0]?.image?.url}
+                             style={{height: "18px"}}
+                             alt={bottomContainers[0]?.text}/>
+                             <div className="res-bottom-text">{bottomContainers[0]?.text}</div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
