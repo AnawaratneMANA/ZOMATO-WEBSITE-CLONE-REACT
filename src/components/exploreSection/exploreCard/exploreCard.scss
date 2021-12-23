@@ -32,5 +32,48 @@
 }
 
 .pro-off {
+  position: absolute;
+  left: 0px;
+  bottom: 40px;
+  background-color: var(--tag-red);
+  font-size: 14px;
+  padding: 0px 6px;
+  color: var(--primary-bg);
+  border-radius: 0px 2px 2px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 18px;
+  font-weight: 500;
+}
 
+.discount{
+  position: absolute;
+  left: 0px;
+  bottom: 14px;
+  background-color: var(--tag-blue);
+  color: var(--primary-bg);
+  font-size: 14px;
+  padding: 0px 6px;
+  border-radius: 0px 2px 2px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.gold-off {
+  position: absolute;
+  left: 0px;
+  bottom: 14px;
+  background-color: var(--tag-red);
+  font-size: 14px;
+  padding: 0px 6px;
+  border-radius: 0px 2px 2px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 18px;
+  font-weight: 500;
 }
