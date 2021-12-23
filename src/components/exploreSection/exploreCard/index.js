@@ -22,6 +22,30 @@ const ExploreCard  = ({restaurant}) => {
                 {goldOff && <div className="gold-off absolute-center">{goldOff}</div>}
                 {discount && <div className="discount absolute-center">{discount}</div>}
             </div>
+            <div className="res-row">
+                <div className="res-name">{name}</div>
+                        {rating && (
+                            <div className="res-rating absolute-center">
+                                {rating} <i className="fi fi-rs-star absolute-center"/>
+                            </div>
+                        )}
+            </div>
+            <div className="res-row">
+                {cuisine.length && (
+                    <div className="res-cuisine">
+                        {cuisine.map((item,i)=> {
+                            return(
+                                <span className="res-cuisine-tag">
+                                    {item}
+                                    {i !== cuisine.length - 1 && ","}
+                                </span>
+                            );
+                        })}
+
+                    </div>
+                )}
+            </div>
+
         </div>
     );
 }
