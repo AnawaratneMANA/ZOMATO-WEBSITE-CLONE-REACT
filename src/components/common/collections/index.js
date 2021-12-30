@@ -15,41 +15,45 @@ const settings = {
 }
 
 const Collection = ({list}) => {
-    return (<div className="collection-wrapper">
-        <div className="max-width collection">
-            <div className="collection-title">Collections</div>
-            <div className="collection-subtitle-row"></div>
-            <div className="collection-subtitle-text">
-                Explore curated list of top restaurants, cafes, pubs and bars in Katubaddha,
-                Based on trends.
-            </div>
-            <div className="collection-location">
-                <div>All Collection in Katubaddha.</div>
-                <i className="fi fi-rs-caret-right absolute-center"></i>
-            </div>
-        </div>
-        <div>
-            <Slider {...settings}>
-                {list.map((item) => (
-                    <div>
-                        <div className="collection-cover">
-                            <img
-                                src={item.cover}
-                                alt={item.title}
-                                className="collection-image"
-                            />
-                            <div className="gradient-bg"></div>
-                            <div className="collection-card-title">{item.title}</div>
-                            <div className="collection-card-subtitle">
-                                <div>{item.places}</div>
-                                <i className="fi fi-rr-caret-right absolute-center"></i>
-                            </div>
-                        </div>
+    return (
+        <div className="collection-wrapper">
+            <div className="max-width collection">
+                <div className="collection-title">Collections</div>
+                <div className="collection-subtitle-row">
+                    <div className="collection-subtitle-text">
+                        Explore curated list of top restaurants, cafes, pubs and bars in Katubaddha,
+                        Based on trends.
                     </div>
-                ))}
-            </Slider>
+                    <div className="collection-location">
+                        <div>All Collection in Katubaddha.</div>
+                        <i className="fi fi-rs-caret-right absolute-center"></i>
+                    </div>
+                </div>
+                <div>
+                    <Slider {...settings}>
+                        {list.map((item) => (
+                            <div>
+                                <div className="collection-cover">
+                                    <img
+                                        src={item.cover}
+                                        alt={item.title}
+                                        className="collection-image"
+                                    />
+                                    <div className="gradient-bg"></div>
+                                    <div className="collection-card-title">{item.title}</div>
+                                    <div className="collection-card-subtitle">
+                                        <div>{item.places}</div>
+                                        <i className="fi fi-rr-caret-right absolute-center"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </div>
+
         </div>
-    </div>)
+    )
 }
 
 export default Collection;
