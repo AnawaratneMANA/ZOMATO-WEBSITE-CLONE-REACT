@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = () => {
-    return <div>This is Footer 
+    return <div className="absolute-center">This is Footer
     🔥</div>;
 }
 

@@ -2,7 +2,7 @@ import React from "react"
 import "./collection.scss"
 const Collection = () => {
     return (<div>
-        This is the collection.
+        This is the Collection!.
     </div>)
 }
 
