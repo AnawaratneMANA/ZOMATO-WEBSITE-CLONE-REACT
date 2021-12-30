@@ -3,6 +3,7 @@ import "./nightLife.scss"
 import {nightLife} from "../../data/nightLife";
 import Collection from "../common/collections";
 import Filters from "../common/filters";
+import ExploreSection from "../exploreSection";
 
 const nightLifeList = nightLife;
 const nightFilters = [
@@ -84,6 +85,10 @@ const NightLife = () => {
             <div className="max-width">
                 <Filters filterList={nightFilters}/>
             </div>
+            <ExploreSection
+                list={nightLifeList}
+                collectionName="Nightlife Restaurants in Sri Lanka"
+            />
         </div>
     );
 }
